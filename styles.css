@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border: 2px solid #333;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.lock {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin {
+    width: 20px;
+    height: 30px;
+    background-color: #666;
+    margin: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    transition: bottom 0.2s ease;
+}
+
+.ganzua {
+    width: 10px;
+    height: 200px;
+    background-color: #444;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.ganzua.active {
+    display: block;
+}
+
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #555;
+}
